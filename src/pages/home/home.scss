@@ -1,11 +1,16 @@
 page-home {
 
     font-weight: 300;
-  
+    
     ion-slide {
   
       position: relative;
       background-size: contain;
+
+      .pic{
+        
+        margin-top: -300px
+      }
       
   
       p {
@@ -20,10 +25,10 @@ page-home {
         margin-bottom: 0;
       }
       img {
-        width: 25px;
-        height: 25px;
-        margin-top: -150px
+        
+        margin-top: -200px
       }
+      
   
     }
   

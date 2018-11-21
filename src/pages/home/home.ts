@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { CartoonPage } from '../cartoon/Cartoon';
+import { welcomePage } from '../welcome/welcome';
 
 @Component({
   selector: 'page-home',
@@ -20,5 +21,7 @@ export class HomePage {
       alert("Username and Paseeword Error !!!");
     }
   }
-  
+  next2(){
+    this.navCtrl.push(welcomePage)
+  }
 }

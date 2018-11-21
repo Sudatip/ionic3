@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-//import { doraemonPage } from '../doraemon/doraemon';
-//import { pokemonPage } from '../pokemon/pokemon';
-//import { digimonPage } from '../digimon/digimon';
+import { Component, ViewChild } from '@angular/core';
+import { IonicPage,Nav, NavController, NavParams, MenuController } from 'ionic-angular';
+import { doraemonPage } from '../doraemon/doraemon';
+import { pokemonPage } from '../pokemon/pokemon';
+import { digimonPage } from '../digimon/digimon';
+import { CartoonPage } from '../cartoon/Cartoon';
 
 /**
  * Generated class for the DetailPage page.
@@ -19,22 +20,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class welcomePage {
   a:any;
   text:any;
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  @ViewChild(Nav)nav:Nav;
+  constructor(private menu: MenuController ,public navCtrl: NavController, public navParams: NavParams) {
   }
-  /*next(){
-    this.navCtrl.push(doraemonPage)
+  next(){
+    this.navCtrl.push(CartoonPage)
+    //this.menu.toggle();
   }
-  next_pokemon(){
-    this.navCtrl.push(pokemonPage)
-  }
-  next_digimon(){
-    this.navCtrl.push(digimonPage)
-  }
-  */
-
   ionViewDidLoad() {
     console.log('ionViewDidLoad welcomPage');
   }
-
 }
