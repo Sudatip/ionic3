@@ -1,4 +1,7 @@
 {
     "LOGOUT" : "LOGOUT",
+    "Cartoon" : "Cartoon",
+    "Developer" : "Developer",
+    "Translate" : "Translate",
     "Administrator" : "Administrator"
 }

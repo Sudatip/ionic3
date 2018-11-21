@@ -1,30 +1,38 @@
 <ion-menu [content]="content">
     <ion-header>
         <ion-toolbar color = "primary">
-            <ion-title text-center>Menu</ion-title>
+            <ion-title text-center>{{ 'Menu' | translate }}</ion-title>
         </ion-toolbar>
     </ion-header>
     <ion-content>
     <ion-list>
             <button ion-item (click)="login()">
                 <ion-icon name="contact" item-start>
-                </ion-icon>LOGOUT
+                </ion-icon> {{ 'LOGOUT' | translate}}
                 <!---{{ 'GitHub' | translate }}-->
             </button>
             <button ion-item (click)="titlecartoon()">
                 <ion-icon name="ios-book" item-start></ion-icon>
-            Cartoon
+            {{ 'Cartoon' | translate }}
             </button>
 
             <button ion-item (click)="Developer()">
             <ion-icon name="construct" item-start></ion-icon>
-            Developer
+              {{ 'Developer' | translate}}
             </button>
+             <!--<button ion-item (click)="switchLanguage() " >
+            <ion-icon name='ios-globe' item-start value="th" ></ion-icon>
+            translate
+            </button>-->
             <button ion-item>
             <ion-icon name='ios-globe' item-start></ion-icon>
-            translate
+            <br>
+            <ion-icon name='ios-globe'></ion-icon>
+              <ion-select [(ngModel)]="lang" (ionChange)="switchLanguage()"interface="popover">
+                <ion-option value="en">{{ 'English' | translate }}</ion-option>
+                <ion-option value="th">{{ 'Thai' | translate }}</ion-option></ion-select>
+            {{ 'Translate' | translate}}
             </button>
-            
           </ion-list>
     </ion-content>
 </ion-menu>

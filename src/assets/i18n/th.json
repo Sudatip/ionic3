@@ -1,4 +1,10 @@
 {
     "LOGOUT" : "ล็อกเอาท์",
-    "Administrator" : "แอดมินของระบบ"
+    "Cartoon" : "การ์ตูน",
+    "Developer" : "นักพัฒนา",
+    "Translate" : "แปลภาษา",
+    "Administrator" : "แอดมินของระบบ",
+    "Thai" : "ไทย",
+    "CARTOON" : "การ์ตูน",
+    "Menu" : "เมนู"
 }

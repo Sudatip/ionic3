@@ -20,7 +20,7 @@ import { developerPage } from '../pages/developer/developer';
 export class MyApp {
   lang:any;
   [x: string]: any;
-  rootPage:any = CartoonPage;
+  rootPage:any = HomePage;
   page:Array<{title:string,Component:any,icon:any}>;
   @ViewChild(Nav)nav:Nav;
 
