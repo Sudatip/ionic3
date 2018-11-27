@@ -20,6 +20,14 @@ import { developerPage } from '../pages/developer/developer';
 //แปลภาษาหน้าเวปไซต์
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {TranslateModule,TranslateLoader} from '@ngx-translate/core';
+import { LoginPage } from '../pages/login/login';
+import { RegisterPage } from '../pages/register/register';
+
+//firebase_auth_email
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { FIREBASE_INFO } from './firebase.info';
+
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -34,7 +42,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     pokemonPage,
     digimonPage,
     welcomePage,
-    developerPage
+    developerPage,
+    LoginPage,
+    RegisterPage
   ],
   imports: [
     BrowserModule,
@@ -46,6 +56,8 @@ export function HttpLoaderFactory(http: HttpClient) {
            }
         }
       }),
+      AngularFireAuthModule,
+      AngularFireModule.initializeApp(FIREBASE_INFO),
     HttpClientModule,
     TranslateModule.forRoot({
         loader: {
@@ -65,7 +77,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     pokemonPage,
     digimonPage,
     welcomePage,
-    developerPage
+    developerPage,
+    LoginPage,
+    RegisterPage
   ],
   providers: [
     StatusBar,
