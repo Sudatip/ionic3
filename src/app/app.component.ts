@@ -15,6 +15,12 @@ import { welcomePage } from '../pages/welcome/welcome';
 import { developerPage } from '../pages/developer/developer';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
+import { doraemonNPage } from '../pages/doraemonN/doraemonN';
+import { doraemonSPage } from '../pages/doraemonS/doraemonS';
+import { pokemonNPage } from '../pages/pokemonN/pokemonN';
+import { pokemonSPage } from '../pages/pokemonS/pokemonS';
+import { digimonNPage } from '../pages/digimonN/digimonN';
+import { digimonSPage } from '../pages/digimonS/digimonS';
 
 
 @Component({

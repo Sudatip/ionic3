@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { doraemonNPage } from '../doraemonN/doraemonN';
+import { doraemonSPage } from '../doraemonS/doraemonS';
 
 
 /**
@@ -23,5 +25,11 @@ export class doraemonPage {
   
   ionViewDidLoad() {
     console.log('ionViewDidLoad doraemonPage');
+  }
+  next_normal(){
+    this.navCtrl.push(doraemonNPage)
+  }
+  next_special(){
+    this.navCtrl.push(doraemonSPage)
   }
 }

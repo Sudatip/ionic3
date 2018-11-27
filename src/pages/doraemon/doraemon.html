@@ -1,7 +1,7 @@
 <ion-header>
 
     <ion-navbar>
-      <ion-title>Doraemon</ion-title>
+      <ion-title text-center>Doraemon</ion-title>
     </ion-navbar>
   
   </ion-header>
@@ -41,8 +41,8 @@
             <div class="card-subtitle"></div>
           </ion-card>
           <div class = "button-eiei">
-          <button  ion-button>Normal</button>
-          <button  ion-button>Special Region</button>
+          <button  ion-button (click)="next_normal()">Normal</button>
+          <button  ion-button (click)="next_special()">Special Region</button>
           </div>
           
 

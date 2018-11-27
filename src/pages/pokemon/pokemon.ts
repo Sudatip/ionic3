@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { pokemonNPage } from '../pokemonN/pokemonN';
+import { pokemonSPage } from '../pokemonS/pokemonS';
 
 /**
  * Generated class for the DetailPage page.
@@ -22,6 +24,13 @@ export class pokemonPage {
   
   ionViewDidLoad() {
     console.log('ionViewDidLoad pokemonPage');
+  }
+  next_normal(){
+    this.navCtrl.push(pokemonNPage)
+  }
+  next_special(){
+    this.navCtrl.push(pokemonSPage)
+    
   }
 
 }

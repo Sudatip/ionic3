@@ -27,6 +27,13 @@ import { RegisterPage } from '../pages/register/register';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { FIREBASE_INFO } from './firebase.info';
+import { doraemonNPage } from '../pages/doraemonN/doraemonN';
+import { doraemonSPage } from '../pages/doraemonS/doraemonS';
+import { pokemonNPage } from '../pages/pokemonN/pokemonN';
+import { pokemonSPage } from '../pages/pokemonS/pokemonS';
+import { digimonNPageModule } from '../pages/digimonN/digimonN.module';
+import { digimonNPage } from '../pages/digimonN/digimonN';
+import { digimonSPage } from '../pages/digimonS/digimonS';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -44,7 +51,14 @@ export function HttpLoaderFactory(http: HttpClient) {
     welcomePage,
     developerPage,
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    doraemonNPage,
+    doraemonSPage,
+    pokemonNPage,
+    pokemonSPage,
+    digimonNPage,
+    digimonSPage
+    
   ],
   imports: [
     BrowserModule,
@@ -79,7 +93,14 @@ export function HttpLoaderFactory(http: HttpClient) {
     welcomePage,
     developerPage,
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    doraemonNPage,
+    doraemonSPage,
+    pokemonNPage,
+    pokemonSPage,
+    digimonNPage,
+    digimonSPage
+    
   ],
   providers: [
     StatusBar,

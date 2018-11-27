@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { digimonNPage } from '../digimonN/digimonN';
-import { digimonSPage } from '../digimonS/digimonS';
+
 
 /**
  * Generated class for the DetailPage page.
@@ -12,25 +11,24 @@ import { digimonSPage } from '../digimonS/digimonS';
 
 @IonicPage()
 @Component({
-  selector: 'page-digimon',
-  templateUrl: 'digimon.html',
+  selector: 'page-doraemonS',
+  templateUrl: 'doraemonS.html',
 })
-export class digimonPage {
+export class doraemonSPage {
+  slides = [
+    {
+      title: "",
+      description: "",
+      image: "../../assets/imgs/Doraemon_S_1.jpg",
+    }
+  ];
   a:any;
   text:any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
   
-
   ionViewDidLoad() {
-    console.log('ionViewDidLoad digimonPage');
+    console.log('ionViewDidLoad doraemonSPage');
   }
-  next_normal(){
-    this.navCtrl.push(digimonNPage)
-  }
-  next_special(){
-    this.navCtrl.push(digimonSPage)
-  }
-
 }
