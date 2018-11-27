@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { comingsoonPage } from '../comingsoon/comingsoon';
 
 
 /**
@@ -40,5 +41,8 @@ export class doraemonNPage {
   
   ionViewDidLoad() {
     console.log('ionViewDidLoad doraemonNPage');
+  }
+  comingsoon(){
+    this.navCtrl.push(comingsoonPage)
   }
 }

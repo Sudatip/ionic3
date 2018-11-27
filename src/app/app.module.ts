@@ -34,6 +34,7 @@ import { pokemonSPage } from '../pages/pokemonS/pokemonS';
 import { digimonNPageModule } from '../pages/digimonN/digimonN.module';
 import { digimonNPage } from '../pages/digimonN/digimonN';
 import { digimonSPage } from '../pages/digimonS/digimonS';
+import { comingsoonPage } from '../pages/comingsoon/comingsoon';
 
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -57,7 +58,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     pokemonNPage,
     pokemonSPage,
     digimonNPage,
-    digimonSPage
+    digimonSPage,
+    comingsoonPage
     
   ],
   imports: [
@@ -99,7 +101,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     pokemonNPage,
     pokemonSPage,
     digimonNPage,
-    digimonSPage
+    digimonSPage,
+    comingsoonPage
     
   ],
   providers: [

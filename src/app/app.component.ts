@@ -21,6 +21,7 @@ import { pokemonNPage } from '../pages/pokemonN/pokemonN';
 import { pokemonSPage } from '../pages/pokemonS/pokemonS';
 import { digimonNPage } from '../pages/digimonN/digimonN';
 import { digimonSPage } from '../pages/digimonS/digimonS';
+import { comingsoonPage } from '../pages/comingsoon/comingsoon';
 
 
 @Component({
@@ -65,7 +66,7 @@ export class MyApp {
           {
             text: 'Agree',
             handler: () => {
-              this.nav.push(LoginPage)
+              this.nav.push(HomePage)
               this.menu.toggle();
             }
           }

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { comingsoonPage } from '../comingsoon/comingsoon';
 
 
 /**
@@ -12,17 +11,11 @@ import { comingsoonPage } from '../comingsoon/comingsoon';
 
 @IonicPage()
 @Component({
-  selector: 'page-digimonS',
-  templateUrl: 'digimonS.html',
+  selector: 'page-comingsoon',
+  templateUrl: 'comingsoon.html',
 })
-export class digimonSPage {
-  slides = [
-    {
-      title: "",
-      description: "",
-      image: "../../assets/imgs/digimon_S_1.jpg",
-    }
-  ];
+export class comingsoonPage {
+  
   a:any;
   text:any;
 
@@ -30,9 +23,6 @@ export class digimonSPage {
   }
   
   ionViewDidLoad() {
-    console.log('ionViewDidLoad digimonSPage');
-  }
-  comingsoon(){
-    this.navCtrl.push(comingsoonPage)
+    console.log('ionViewDidLoad comingsoonPage');
   }
 }
