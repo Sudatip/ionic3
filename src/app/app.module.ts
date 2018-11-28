@@ -4,38 +4,37 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
-
-
-
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { CartoonPage } from '../pages/cartoon/Cartoon';
-import { doraemonPage } from '../pages/doraemon/doraemon';
-import { pokemonPage } from '../pages/pokemon/pokemon';
-import { doraemonPageModule } from '../pages/doraemon/doraemon.module';
-import { digimonPage } from '../pages/digimon/digimon';
-import { welcomePage } from '../pages/welcome/welcome';
-import { developerPage } from '../pages/developer/developer';
 
-//แปลภาษาหน้าเวปไซต์
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
-import {TranslateModule,TranslateLoader} from '@ngx-translate/core';
+// เกี่ยวกับหน้าล็อกอินและสมัครเข้าสู่ระบบ
+import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
 
-//firebase_auth_email
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireAuthModule } from 'angularfire2/auth';
-import { FIREBASE_INFO } from './firebase.info';
+//เกี่ยวกับหน้าการ์ตูนทั้งหมด
+import { CartoonPage } from '../pages/cartoon/Cartoon';
+import { doraemonPage } from '../pages/doraemon/doraemon';
+import { pokemonPage } from '../pages/pokemon/pokemon';
+import { digimonPage } from '../pages/digimon/digimon';
+import { welcomePage } from '../pages/welcome/welcome';
+import { developerPage } from '../pages/developer/developer';
 import { doraemonNPage } from '../pages/doraemonN/doraemonN';
 import { doraemonSPage } from '../pages/doraemonS/doraemonS';
 import { pokemonNPage } from '../pages/pokemonN/pokemonN';
 import { pokemonSPage } from '../pages/pokemonS/pokemonS';
-import { digimonNPageModule } from '../pages/digimonN/digimonN.module';
 import { digimonNPage } from '../pages/digimonN/digimonN';
 import { digimonSPage } from '../pages/digimonS/digimonS';
 import { comingsoonPage } from '../pages/comingsoon/comingsoon';
 
+//ฟังก์ชันแปลภาษา : Translate
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import {TranslateModule,TranslateLoader} from '@ngx-translate/core';
+
+
+//ฟังก์ชันล็อกอิน : Email - Google - Facebook 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { FIREBASE_INFO } from './firebase.info';
 import {Facebook} from '@ionic-native/facebook'
 
 

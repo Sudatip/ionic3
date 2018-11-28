@@ -20,12 +20,12 @@ export class pokemonSPage {
     {
       title: "",
       description: "",
-      image: "../../assets/imgs/pokemon_s_1.jpg",
+      image: "https://firebasestorage.googleapis.com/v0/b/project-8285769933273444381.appspot.com/o/Pokemon_S_1.jpg?alt=media&token=805895d9-2479-4476-b086-8a7ef2d4fb14",
     },
     {
       title: "",
       description: "",
-      image: "../../assets/imgs/pokemon_s_2.jpg",
+      image: "https://firebasestorage.googleapis.com/v0/b/project-8285769933273444381.appspot.com/o/Pokemon_S_2.jpg?alt=media&token=5ef628fa-63e4-4698-8224-c7418e1cabd5",
     }
     
   ];

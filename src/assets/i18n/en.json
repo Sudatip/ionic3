@@ -4,4 +4,23 @@
     "Developer" : "Developer",
     "Translate" : "Translate",
     "Administrator" : "Administrator",
+    "view" : "view",
+    "Normal" : "Normal",
+    "Special Region" : "Special Region",
+    "Digimon" : "Digimon",
+    "Pokemon" : "Pokemon",
+    "Doraemon" : "Doraemon",
+    "Doraemon Normal" : "Doraemon Normal",
+    "Pokemon Normal" : "Pokemon Normal",
+    "Digimon Normal" : "Digimon Normal",
+    "Digimon Special" : "Digimon Special",
+    "Pokemon Special" : "Digimon Special",
+    "Doraemon Special" : "Digimon Special",
+    "Sunisa Thammasoon" : "Sunisa Thammasoon",
+    "Chanon Pornsiriwong" : "Chanon Pornsiriwong",
+    "Tawita Wichachai" : "Tawita Wichachai",
+    "Pasit Thanadamkerng" : "Pasit Thanadamkerng",
+    "Sudatip Taweesuk" : "Sudatip Taweesuk",
+    "Nattharikan Chuaymit" : "Nattharikan Chuaymit"
+    
 }

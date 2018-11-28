@@ -6,5 +6,25 @@
     "Administrator" : "แอดมินของระบบ",
     "Thai" : "ไทย",
     "CARTOON" : "การ์ตูน",
-    "Menu" : "เมนู"
+    "Menu" : "เมนู",
+    "view" : "เข้าชม",
+    "Normal" : "ภาคปกติ",
+    "Special Region" : "ภาคพิเศษ",
+    "Digimon" : "ดิจิม่อน",
+    "Pokemon" : "โปเกม่อน",
+    "Doraemon" : "โดราเอม่อน",
+    "Doraemon Normal" : "โดราเอม่อน ภาคปกติ",
+    "Pokemon Normal" : "โปเกม่อน ภาคปกติ",
+    "Digimon Normal" : "ดิจิม่อน ภาคปกติ",
+    "Doraemon Special" : "โดราเอม่อน ภาคพิเศษ",
+    "Pokemon Special" : "โปเกม่อน ภาคพิเศษ",
+    "Digimon Special" : "ดิจิม่อน ภาคพิเศษ",
+    "Sunisa Thammasoon" : "สุนิสา ธรรมสูน",
+    "Chanon Pornsiriwong" : "ชานน พรศิริวงษ์",
+    "Tawita Wichachai" : "ฑวิตา วิชาชัย",
+    "Pasit Thanadamkerng" : "พสิษฐ์ ธนดำเกิง",
+    "Sudatip Taweesuk" : "สุดาทิพย์ ทวีสุข",
+    "Nattharikan Chuaymit" : "ณัฐริกาญ ช่วยมิตร"
+    
+
 }

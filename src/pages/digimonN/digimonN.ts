@@ -20,7 +20,7 @@ export class digimonNPage {
     {
       title: "",
       description: "",
-      image: "../../assets/imgs/digimon_N_1.jpg",
+      image: "https://firebasestorage.googleapis.com/v0/b/project-8285769933273444381.appspot.com/o/Digimon_N_1.JPG?alt=media&token=2c468ec8-5ea8-4f50-be8a-cef2a4ea8826",
     }
   ];
   a:any;

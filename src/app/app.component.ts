@@ -4,25 +4,29 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AlertController } from 'ionic-angular';
 
+//ฟังก์ชันแปลภาษา : Translate
 import { TranslateService } from '@ngx-translate/core';
 
+// เกี่ยวกับหน้าล็อกอินและสมัครเข้าสู่ระบบ
 import { HomePage } from '../pages/home/home';
-import { CartoonPage } from '../pages/cartoon/Cartoon';
-import { doraemonPage } from '../pages/doraemon/doraemon';
-import { pokemonPage } from '../pages/pokemon/pokemon';
-import { digimonPage } from '../pages/digimon/digimon';
-import { welcomePage } from '../pages/welcome/welcome';
-import { developerPage } from '../pages/developer/developer';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
+
+//เกี่ยวกับหน้าการ์ตูนทั้งหมด
+import { CartoonPage } from '../pages/cartoon/Cartoon';
+import { doraemonPage } from '../pages/doraemon/doraemon';
 import { doraemonNPage } from '../pages/doraemonN/doraemonN';
 import { doraemonSPage } from '../pages/doraemonS/doraemonS';
+import { pokemonPage } from '../pages/pokemon/pokemon';
 import { pokemonNPage } from '../pages/pokemonN/pokemonN';
 import { pokemonSPage } from '../pages/pokemonS/pokemonS';
+import { digimonPage } from '../pages/digimon/digimon';
 import { digimonNPage } from '../pages/digimonN/digimonN';
 import { digimonSPage } from '../pages/digimonS/digimonS';
 import { comingsoonPage } from '../pages/comingsoon/comingsoon';
 
+//สมาชิกในกลุ่ม : Developer
+import { developerPage } from '../pages/developer/developer';
 
 @Component({
   templateUrl: 'app.html'
@@ -30,7 +34,7 @@ import { comingsoonPage } from '../pages/comingsoon/comingsoon';
 export class MyApp {
   lang:any;
   [x: string]: any;
-  rootPage:any = HomePage;
+  rootPage:any = CartoonPage;
   page:Array<{title:string,Component:any,icon:any}>;
   @ViewChild(Nav)nav:Nav;
 

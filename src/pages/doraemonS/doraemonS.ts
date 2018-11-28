@@ -20,7 +20,7 @@ export class doraemonSPage {
     {
       title: "",
       description: "",
-      image: "../../assets/imgs/Doraemon_S_1.jpg",
+      image: "https://firebasestorage.googleapis.com/v0/b/project-8285769933273444381.appspot.com/o/Doraemon_S_1.jpg?alt=media&token=d80518dd-963d-42ec-aee7-0dc6f0720d4b",
     }
   ];
   a:any;
