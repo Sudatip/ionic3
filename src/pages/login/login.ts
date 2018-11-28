@@ -1,11 +1,17 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ToastController } from 'ionic-angular';
 import { User } from '../../models/user';
-import { AngularFireAuth } from 'angularfire2/auth';
 import { RegisterPage } from '../register/register';
 import { HomePage } from '../home/home';
 import { CartoonPage } from '../cartoon/Cartoon';
 import { LoadingController } from 'ionic-angular';
+
+
+//ล็อกอินทั้งหมด
+import { Facebook} from '@ionic-native/facebook'
+import { AngularFireAuth } from 'angularfire2/auth';
+import firebase from 'firebase';
+
 
 
 
@@ -18,7 +24,7 @@ export class LoginPage {
 
   user = {} as User;
 
-  constructor(public loadingCtrl: LoadingController,private toast: ToastController,private fireAuth: AngularFireAuth,public navCtrl: NavController, public navParams: NavParams,) {
+  constructor(private fireAuth: AngularFireAuth,public facebook:Facebook,public loadingCtrl: LoadingController,private toast: ToastController,public navCtrl: NavController, public navParams: NavParams,) {
   }
 
   ionViewDidLoad() {
@@ -50,4 +56,20 @@ export class LoginPage {
   register(){
     this.navCtrl.push(RegisterPage);
   }
+  async facebookeiei(): Promise<any> {
+    return this.facebook.login(['email'])
+      .then( response => {
+        const facebookCredential = firebase.auth.FacebookAuthProvider
+          .credential(response.authResponse.accessToken);
+  
+        firebase.auth().signInWithCredential(facebookCredential)
+          .then( success => { 
+            console.log("Firebase success: " + JSON.stringify(success)); 
+          });
+      if(facebookCredential){
+        this.navCtrl.push(CartoonPage);
+      }
+        }).catch((error) => { console.log(error) });
+    
+    }
 }
