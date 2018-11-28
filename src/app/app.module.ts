@@ -36,6 +36,8 @@ import { digimonNPage } from '../pages/digimonN/digimonN';
 import { digimonSPage } from '../pages/digimonS/digimonS';
 import { comingsoonPage } from '../pages/comingsoon/comingsoon';
 
+import {Facebook} from '@ionic-native/facebook'
+
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -108,7 +110,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    Facebook
   ]
 })
 export class AppModule {}
